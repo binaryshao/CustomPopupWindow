@@ -88,7 +88,7 @@ allprojects {
  - 创建要弹出的view
  
  ` popupTestView = new PopupTestView(PopupWindowActivity.this);`
- - 弹出view
+ - 弹出view(共有6种方式，这里只写一种作为示例)
 ```
 customPopupWindow.showOnBottom(v, popupTestView, 0, ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT, 0, 100);
 ```

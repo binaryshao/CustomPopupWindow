@@ -1,7 +1,7 @@
 demo演示：
 
 ![](https://github.com/Sbingo/CustomPopupWindow/raw/master/gif/custom_popup_window.gif) 
-###**效果说明**
+### 效果说明
 
  - 提供了六种不同的弹出方式，后面会有详细说明
 
@@ -10,8 +10,9 @@ demo演示：
  - 弹出view默认在灰色背景中的正中间，也可以自己设置，并可微调
  
  - 可设置弹出和消失style，如动画效果
+ 
  - 点击灰色背景外和背景中非view区弹窗都会消失
-###**技术分析**
+### 技术分析
 
  - 将传入的view作为子view放入一个灰色的父view（FrameLayout）中
 
@@ -58,7 +59,7 @@ popupWindow.showAsDropDown(parentView, 0, 0);
 popupWindow.showAtLocation(parentView, Gravity.NO_GRAVITY, location[0], location[1] - popupWindow.getHeight());
 ```
 
-###**Usage**
+### Usage
 
 #### **1.**   在项目的`build.gradle`文件最后添加：
 
@@ -79,7 +80,7 @@ allprojects {
     compile 'com.github.Sbingo:CustomPopupWindow:v1.0.0'
  }
 ```
-####**3.** 开始使用
+#### **3.** 开始使用
 
  - 新建`CustomPopupWindow`对象
  
@@ -92,7 +93,7 @@ allprojects {
 ```
 customPopupWindow.showOnBottom(v, popupTestView, 0, ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT, 0, 100);
 ```
-####**可选配置**
+#### 可选配置
 
  - 设置弹窗消失的监听器
  
@@ -117,7 +118,7 @@ customPopupWindow.setGravity(Gravity.BOTTOM | Gravity.RIGHT);
  - 设置弹出和消失style
 
 	对应于每个show（）方法中的style参数，详见下面的说明
-###**方法参数说明**
+### 方法参数说明
 以 `showOnBottom(View parentView, View contentView, int style, int width, int height, int xOff, int yOff)`方法为例，它的作用是在目标view下方弹出view，参数说明：
 
  - `parentView` 
@@ -157,3 +158,11 @@ customPopupWindow.setGravity(Gravity.BOTTOM | Gravity.RIGHT);
 相信看了名字就知道它们的作用，各参数的意义也和上面的说明一样。
 
 如果觉得有用，还请给个**Star**，谢谢。
+
+### 公众号
+扫描下方二维码，关注我的公众号 
+
+分享各种知识、干货，给自己多一扇看世界的窗
+    
+          as彬哥六六六
+![as彬哥六六六](https://s2.ax1x.com/2019/03/22/A8dPfA.jpg)
